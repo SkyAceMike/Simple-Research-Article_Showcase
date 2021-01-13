@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<title>Programming Is Not Your Golden Ticket To Success</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" type="image/png" href="images/favicon.jpg">
+<style>
+
+
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ), url("images/computer.jpg");
+        filter: saturate(130%);
+  
+  
+  min-height: 100%;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -150px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu {
+  display: none;
+}
+
+.column {
+  display: table-cell;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+.row {
+  display: table;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.smol {
+  font-size: small;
+}
+
+.col5 {
+  width: 16.66666%;
+}
+
+#triangle-down {
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-top:20px solid rgb(25, 25, 25);
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+ul {
+  list-style: disc;
+}
+
+ul li::before {
+  color: black;
+  size: 433px;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+  font-size: 2em; 
+}
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2 col5">
+      <a href="#" class="w3-button w3-block w3-black">TOP</a>
+    </div>
+    <div class="w3-col col5">
+      <a href="#about" class="w3-button w3-block w3-black">INTRODUCION</a>
+    </div>
+    <div class="w3-col col5">
+      <a href="#Scholarly" class="w3-button w3-block w3-black">SCHOLARLY ARGUMENTS</a>
+    </div>
+    <div class="w3-col col5">
+      <a href="#NonScholarly" class="w3-button w3-block w3-black">NON-SCHOLARLY ARGUMENTS</a>
+    </div>
+    <div class="w3-col col5">
+      <a href="#opinion" class="w3-button w3-block w3-black">THOUGHTS</a>
+    </div>
+    <div class="w3-col col5">
+      <a href="#cited" class="w3-button w3-block w3-black">WORKS CITED</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Author: SkyAceMike's Real Name</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">"Programming Is Not Your Golden Ticket To Success"</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Info-Redacted Final Research Project For Showcase Purposes</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">INTRODUCION</span></h5>
+    <p style="text-align: center;">In Vietnam, kids learn programming in school at age 10. </p>
+    <p style="text-align: center;">In Estonia, that age drops down to 6. </p>
+    <p style="text-align: center;">In England, that age is 5. </p> 
+    <br>
+    <p>With a spotlight cast on the Computer Science curriculum worldwide, there's been recent craze around the idea that <b>"Coding is the new literacy."</b></p>
+    <p>No matter how many times you hear it, <strong>a job in Computer Science does not guarantee you financial success, or never-ending happiness for that matter.</strong> </p>
+    <p>However, there are still some compelling arguments to be made about why everyone should learn to code. </p> 
+    <p>So, I will discuss the arguments of both sides to let <span class="tooltip">readers
+      <span class="tooltiptext">That's you guys! </span>
+    </span> formulate their own opinions. Then, to conclude, I will offer my personal take on why coding just isn't for everyone. Ready? Let's start!</p>
+
+    <br id="Scholarly">
+
+    <!-- Scholarly arguments -->
+    <p style="font-size: 30px; text-align: center; margin-bottom: 0px;"><b>The Scholarly Arguments</b></p>
+    <p style="font-size: 12px; text-align: center; margin-top: -5px; margin-bottom: 10px;"><b>"ok nerd"</b></p>
+    <div class="row">
+      <div class="column" style="background-color:rgb(220, 220, 220); border-right: 5px solid gray;">
+        <p><strong>Proponents</strong></p>
+        <p>On one hand, proponents of widespread code literacy point to studies linking code literacy and 
+          <span class="tooltip">computational thinking
+            <span class="tooltiptext">"computational thinking" - Programming ability.<br>The skill of formulating and organizing problems <br>and solutions into machine-executable code</span>
+          </span> to problem solving skills and creativity, </p>
+      </div>
+      <div class="column" style="background-color:rgb(220, 220, 220);">
+        <p><strong>Skeptics</strong></p>
+        <p>but on the other hand, skeptics of widespread code literacy call for more relevant, 
+          <span class="tooltip">empirical
+            <span class="tooltiptext">"empirical" - Observed in a scientific study </span>
+          </span> evidence of the benefits of widespread code literacy. </p>
+      </div>
+    </div>
+
+    <!-- Skeptics S -->
+    <p style="font-size: larger;"><b>The Skeptics</b></p>
+    <p>On one side of the argument, skeptics such as 
+      <span class="tooltip">Ronny Scherer
+        <span class="tooltiptext">an education researcher at the University of Oslo </span>
+      </span> and 
+      <span class="tooltip">Peter J. Denning
+        <span class="tooltiptext">a computer scientist since the 1960’s who pioneered modern computer memory management </span>
+      </span> are calling for the <b>need for more empirical evidence suggesting that proficiency in programming develops proficiency in problem solving.</b></p>
+      <p>This "transfer of skill" from programming to problem solving is known as the <b>Transfer Effect</b>, and it's existence is the main contention of debate amongst the scholars.</p>
+      <p>Scherer casts doubt on the existence of such transfer effects, stating that the proponents’ <b>“claims have been supplemented with evidence from experimental studies to a very limited extent”</b> and that <b>“most of the empirical research on the transfer effects dates back to the 1980s and 1990s"</b>
+        <span class="tooltip">(Scherer, Learning from the Past).
+          <span class="tooltiptext"><a href="#cited"><b>Citation 1</b></a> </span>
+        </span>
+      </p>
+
+      <p>Tagging along, Denning asserts that <b>“many education researchers have searched for supporting evidence [of computer science transfer effects] but have not found any“</b>
+        <span class="tooltip">(Denning).
+          <span class="tooltiptext"><a href="#cited"><b>Citation 2</b></a> </span>
+        </span></p>
+
+      <p>Skeptics could interpret the current lack of empirical evidence as a sign that learning programming has negligible benefits on everyday problem solving: </p>
+      <div class="w3-panel w3-leftbar w3-light-grey">
+        <p><i>If learning to code really does have a significant impact on daily life, there would already exist numerous, conclusive evidence supporting the existence of transfer effects from the 40 year timespan between the 1980’s to 2020.</i></p>
+        <p>- A Probable Skeptic</p>
+      </div>
+
+      <p>The same skeptics also cite multiple, specific scientific studies that find little to no link between programming and transfer effects.</p>
+        
+      <p>Once again representing the skeptics, both Scherer and Denning cite <b>Pea and Kurland’s study in 1984</b>, which found <b>"little evidence that learning programming in Logo helped students’ math or general cognitive abilities”</b>
+        <span class="tooltip">(Denning).
+          <span class="tooltiptext"><a href="#cited"><b>Citation 2</b></a> </span>
+        </span>
+      </p>
+
+      <p>Most notably, though, is how Denning relates the current craze of code literacy to the old craze of latin literacy. </p>
+      <p>He cites a 1997 scholarly article by Koschmann debunking “a new claim that learning programming is good for children just as learning Latin once was. <b>(There was never any evidence that learning Latin helped children improve life skills.)</b>”
+        <span class="tooltip">(Denning).
+          <span class="tooltiptext"><a href="#cited"><b>Citation 2</b></a> </span>
+        </span>
+      </p>
+
+      <br>
+      <p><span class="w3-tag" style="font-size: large;">Mom:</span> <strong>We already have evidence at home</strong></p>
+      <p><span class="w3-tag" style="font-size: large;">The Evidence:</span> </p>
+      <center><img src="./images/johncena.png" class="w3-image" style="width:100%;"></center>
+
+    <hr style="border-top: 1px solid gray;">
+    <!-- Pro S -->
+    <p style="font-size: larger;"><b>The Proponents</b></p>
+
+    <p>On the other side of the argument, proponents such as 
+      <span class="tooltip">Özkan Vatanserver
+        <span class="tooltiptext">a teacher at The Ministry of National Education in Turkey</span>
+      </span> and  
+      <span class="tooltip">Ronny Scherer
+        <span class="tooltiptext">again, but this time as a proponent!</span>
+      </span> point to their own empirical studies showing <b>statistically significant links between learning coding and transfer skills to problem solving, creative skills, and mathematical skills</b> 
+      <span class="tooltip">(Scherer, The Cognitive Benefits of Learning Computer Programming
+        <span class="tooltiptext"><a href="#cited"><b>Citation 4</b></a> </span>
+      </span>; 
+      <span class="tooltip">Vatansever).
+        <span class="tooltiptext"><a href="#cited"><b>Citation 3</b></a> </span>
+      </span></p>
+
+    <p>Vatanserver's study consists of pre-trial and post-trial, qualitative and quantitative tests done on 5th and 6th graders learning to make games with 
+      <span class="tooltip">Scratch
+        <span class="tooltiptext"><a href="https://scratch.mit.edu/"><b>https://scratch.mit.edu/</b></a> </span>
+      </span>, a kid-friendly drag-and-drop programming environment.</p>
+
+    <p><b>As expected, this study done in September 2018 found a statistically significant link between learning coding and problem solving skills.</b></p>
+
+    <p><b>Scherer, despite publishing a journal calling the current empirical studies outdated, preformed his own study</b> in which he aggregated as many relevant studies done on the transfer effects of programming as his team could find.</p>
+
+    <p><b>This study, published in July 2019, also found a statistically significant link, supporting the existence of programming transfer effects.</b></p>
+
+    <p>By presenting both individual and aggregate studies, the proponents combat the skeptics’ argument of a lack of empirical evidence.</p>
+
+    <p>Therefore, as a counter-interpretation of the skeptical standpoint mentioned earlier, Proponents could interpret the abundance of empirical evidence as an indication that learning programming — and thus computational thinking — yields significant benefits on everyday problem solving:</p>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>There now exists evidence of the transfer effects between learning to code and critical thinking skills! If transfer effects didn't exist before, they evidently do now!</i></p>
+      <p>- A Probable Proponent</p>
+    </div>
+
+    <br>
+    <p><span class="w3-tag" style="font-size: large;">Proponents gathering evidence:</span> </p>
+    <center><img src="./images/itsallcomingtogether.jpg" class="w3-image" style="width:100%;"></center>
+    
+
+    <hr style="border-top: 1px solid gray;">
+
+    <!-- Pro S -->
+    <p style="font-size: larger;"><b>Did They Just... Contradict Each Other?</b></p>
+
+    <p>That's right. <b>Both the Skeptics and the Proponents believe they have the evidence on their side.</b></p>
+
+    <p>However, the key difference is <b>the focus on time.</b></p>
+
+    <p>The Skeptical side relies on <b>older data spanning a longer time window,</b> while the Proponents' side relies on <b>newer data spanning a smaller time window.</b></p>
+    
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><b>The question is, then, do you trust older, more consistent evidence, or you do trust newer, more prone to be disproved evidence?</b></p>
+    </div>
+
+    <center><img src="./images/thonk.png" class="w3-image" style="filter: sepia(30%) hue-rotate(10deg) saturate(900%);"></center>
+
+
+    <br id="NonScholarly">
+
+    <!-- Non-S arguments -->
+    <p style="font-size: 30px; text-align: center; margin-bottom: 0px;"><b>The Non-Scholarly Arguments</b></p>
+    <p style="font-size: 12px; text-align: center; margin-top: -5px; margin-bottom: 10px;"><b>"ok boomer"</b></p>
+    <div class="row">
+      <div class="column" style="background-color:rgb(220, 220, 220); border-right: 5px solid gray;">
+        <p><strong>Proponents</strong></p>
+        <p>Outside of scholarly debates, proponents argue that learning to code can save lives, save money, and open new options for you in a time of growing demand for coders.</p>
+      </div>
+      <div class="column" style="background-color:rgb(220, 220, 220);">
+        <p><strong>Skeptics</strong></p>
+        <p>On the flip side, skeptics warn enticed readers of the "Silicon Valley dream" portrayed by tech companies and policians as they reveal the horrors of the trade.</p>
+      </div>
+    </div>
+
+    <p style="font-size: larger;"><b>The Proponents</b></p>
+    <p>Starting with the proponents, the biggest selling points are that <b>coding can save lives and money.</b></p>
+    <p>Take 
+      <span class="tooltip">Avi Schiffmann
+        <span class="tooltiptext"><a href="#cited"><b>Citation 10</b></a> </span>
+      </span> for example. He's a 17 year old boy who coded a website to track COVID-19 cases worldwide for quick, convenient use.</p>
+
+    <p style="font-size: small; text-align: center;">Here's the tweet to Avi Schiffman's stunning short video</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <center><a href="https://twitter.com/RexChapman/status/1247618309480165376">https://twitter.com/RexChapman/status/1247618309480165376</a></center>
+    <center><blockquote class="twitter-tweet" data-dnt="true" data-theme="light" style="width:auto; display:table;"><p lang="en" dir="ltr">This young man is Avi Schiffmann. He’s just 17. But he built a site that tracks Coronavirus numbers. <br><br>He was offered $8m to place ads on the site. <br><br>He turned it down. Not all heroes wear capes.🌎❤️<a href="https://t.co/rinMT5N2Pn">pic.twitter.com/rinMT5N2Pn</a></p>&mdash; Rex Chapman🏇🏼 (@RexChapman) <a href="https://twitter.com/RexChapman/status/1247618309480165376?ref_src=twsrc%5Etfw">April 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+    </div>
+    
+    <p>At one point, he was offered <b>8 million USD</b> to put ads on his site. What did he do? He refused. <b>He rejected an offer that could have effectively retired him at age 17.</b></p>
+
+    <p>This is the Proponent's view.</p>
+
+    <p>Generally, the proponents paint a picture of the <b>bright, independent, self-taught, and successful code freelancer in Silicon Valley.</b></p>
+
+    <p>For Schiffmann, he had his ticket to success in front of him. He could have used the money to invest in himself, his future, or even offer to donate it for the fight against COVID-19.</p>
+
+    <p>But, even if you don't plan to become a child prodigy of computer science, there are still individual benefits of knowing how to code.</p>
+
+    <p>In business, <b>knowing how to code can open your chances of landing a high-paying job in the midst of a surge of demand for coders.</b></p>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"In fact, even as the Department of Labor predicts the nation will add 1.2 million new computer-science-related jobs by 2022, we’re graduating proportionately fewer computer science majors than we did in the 1980s, and the number of students signing up for Advanced Placement computer science has flatlined."</i></p>
+      <p><span class="tooltip">- Journalist for Mother Jones: Tasneem Raja
+        <span class="tooltiptext"><a href="#cited"><b>Citation 5</b></a> </span>
+      </span></p>
+    </div>
+
+    <p>No matter where you go, the use of technology is growing day-by-day, which means companies are also looking for workers who understand the ins and outs of technology. <b>This makes you more marketable, desired, and sought-after in whichever trade you pursue.</b></p>
+
+    <p>Learning to code doesn't mean you have to quit your current occupation. In fact, it can complement it.</p>
+
+    <p><b>Knowing how to code also opens up your options to a nice, work-from-home freelance side gig.</b></p>
+
+    <p>For the entrepreneur types out there, <b>knowing how to code can cut costs for any budding businesses.</b> Instead of spending over let's say $200,000 USD in wage costs every year for workers to develop and maintain your business's website, what if you did everything yourself? Learning to code sounds a heck-of-a-lot cheaper than a yearly $200,000 fee now, doesn't it?</p>
+
+    <br>
+    <center><p><span class="w3-tag" style="font-size: large;">Dough.</span> <strong>A tech-illiterate CEO checks their wage costs circa 2020.</strong></p></center>
+    <img src="./images/Idontfeelsogood.jpg" class="w3-image" style="width:100%;">
+    
+
+
+
+    <hr style="border-top: 1px solid gray;">
+
+    <p style="font-size: larger;"><b>The Skepetics</b></p>
+
+    <p>As a counter against the proponents' optimism, <b>the skeptics reveal the mud-and-blood bleak reality of the trade.</b></p>
+
+    <p>Take 
+      <span class="tooltip">Basel Farag
+        <span class="tooltiptext"><a href="#cited"><b>Citation 8</b></a> </span>
+      </span>, for example. He's an iOS developer who details his past experience of trying to become one of those Silicon Valley Success Stories.</p>
+
+    <p style="font-size: small; text-align: center;">Here's the Basel Farag's whole article on TechCrunch</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <center> <a href="https://techcrunch.com/2016/05/10/please-dont-learn-to-code/">https://techcrunch.com/2016/05/10/please-dont-learn-to-code/</a></center>
+    </div>
+   
+    <p>Here's a quote from the article:</p>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"It took me more than a year of self-taught study before I got a freelance gig. Even then, the pay was poor. There were countless times I was refused even an interview because I didn’t have a computer science degree.</i></p>
+      <p><i>There were times when I could not afford a place to stay and had to rely on the kindness of friends to keep me going. There were many nights when I wanted to give up. But I found the strength to keep going."</i></p>
+      <p><span class="tooltip"> - iOS Developer: Basel Farag
+        <span class="tooltiptext"><a href="#cited"><b>Citation 8</b></a> </span>
+      </span></p>
+    </div>
+    
+    <p>Like any other job, <b>coding isn't a free ticket to success.</b></p>
+    <p style="font-size: 24px;"><b>Even if you graduated with a degree in computer science, there are roadblocks everywhere:</b></p>
+
+    <ul>
+      <li><b>Clueless HR:</b> Sometimes job requirements require 5 years of experience with a programming language that's only been out for 1!</li><br>
+      <li><b>Code Tests 1:</b> Recruiters test you on impractical code skills for the job. 
+        <br><span class="tooltip" style="display: table; margin: 0 auto;">(like reversing a linked-list or a binary tree)
+          <span class="tooltiptext">Both tests are extremely common in code interviews yet not indicative of practical skills for the job!</span>
+        </span></li><br>
+      <li><b>Code Tests 2:</b> Some recruiters make you physically write your code on <span class="tooltip" style="display: table; margin: 0 auto; font-size: larger; margin-bottom: -5px;"><b>whiteboards</b>
+        <span class="tooltiptext"><img src="./images/whiteboard.png" class="w3-image" style="width:100%;"><br><p>The ancient tablets</p></span>
+      </span></li><br>
+      <li><b>Connections:</b> If you don't have many connections to people already in the trade, your chances just plummeted.</li><br>
+      <li><b>Volatile Changes:</b> You might spend a whole year learning a programming language and have to forget it the next. Tech changes quick, and so do programming conventions. For the busy parent or the overloaded college student: it's a matter of life or livelihood.</li>
+    </ul>
+    <br>
+
+   
+    <p>Let's say you made it past these roadblocks and got for your first job as a coder. What awaits you then?</p>
+
+    <p>You've spent years coding out of your pure love for craft. You've finished countless personal projects, and now you're ready to tackle some real work.</p>
+
+    <p>However, as you find out quickly, things are different when you code for work from when you code for fun.</p>
+    
+    <p>Now, you're working 9-to-5 for someone else's goals, making money but not the satisfaction — the life that once sprung from your own two hands. </p>
+
+      <br>
+      <br>
+      <div style="text-align: center;">
+      <p>Programming is no longer a hobby.</p>
+      <p>Programming is work.</p>
+      <p>What was once fun is now work.</p> 
+      <p>Was everything worth it?</p> 
+      <p>Was it worth everything?</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p>|</p>
+      <p id="triangle-down"></p>
+      
+      </div>
+
+</div>
+
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="opinion">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">FINAL THOUGHTS</span></h5>
+
+    <div style="text-align: center;">
+      <p>It's just not worth it. Not unless you have a never-ending passion for coding and everything it entails.</p>
+      <p>Not unless you have the need. The need to cut costs for business.</p>
+      <p>Not unless you have a dream.</p>
+      <p>Somewhere to be, Somewhere to see.</p>
+      <p></p>
+      <br>
+      <br>
+      <p>Why Programming?</p>
+      <p>What makes it more important, successful, and higher-paying than 
+        <br>auto-repair, home maintenance, healthcare?</p>
+      <br>
+      <br>
+      <p>Sure, it's nice to try new things</p>
+      <p>And you may end up liking it</p>
+      <p>But...</p>
+      <br>
+      <br>
+      <p>In the end, coding does not guarantee success</p>
+      <p>or happiness.</p>
+      <br>
+      <br>
+      <p>However, what you choose to do does.</p>
+      <br>
+      <br>
+      <p>If coding so happens to be your passion,</p>
+      <p>As it is mine,</p>
+      <p>You will push yourself until you fall</p>
+      <p>And then you will push again.</p>
+      <br>
+      <br>
+      <p>I won't guarantee that you'll be rich</p>
+      <p>or happy.</p>
+      <br>
+      <br>
+      <p>Because it all depends on what you choose.</p>
+      <br>
+      <br>
+      <p>However, I can guarantee that you'll fail, and never get back up.</p>
+      <br>
+      <br>
+      <p>Not unless you have a dream.</p>
+      <br>
+      <p>Somewhere to be, Somewhere to see.</p>
+      <br>
+      <br>
+      <p>And unless you have a passion,</p>
+      <p>Unless programming is your key,</p>
+      <p>You've got somewhere else to be.</p>
+      <br>
+      <br>
+      <p>Somewhere else happier in the heart of your sea.</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+
+
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <img src="./images/skyfinance.jpg" class="w3-image" style="width:100%; filter: sepia(100%) hue-rotate(170deg) saturate(900%); ">
+    <p><span class="w3-tag" style="font-size: large;">Money And Happiness.</span> <strong>You'll find both only in your cup of tea.</strong></p>
+    <hr style="border-top: 1px solid gray;">
+
+    
+  </div>
+</div>
+
+
+<!-- Cited Container -->
+<div class="w3-container" id="cited">
+  <div class="w3-content" style="max-width:700px; padding-bottom: 40px; font-size: small;">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Works Cited / Further Reading</span></h5>
+    <p><b>1.</b>&nbsp&nbsp&nbsp&nbspScherer, Ronny. “Learning from the Past—The Need for Empirical Evidence on the Transfer Effects of Computer Programming Skills.” Frontiers in Psychology, vol. 7, Sept. 2016, pp. 1–4. EBSCOhost, search.ebscohost.com/login.aspx?direct=true&AuthType=cookie,ip,uid&db=psyh&AN=2016-48150-001&site=ehost-live. Accessed 20 February 2020.</p>
+    <p><b>2.</b>&nbsp&nbsp&nbsp&nbspDenning, Peter J. “Remaining Trouble Spots with Computational Thinking: Addressing Unresolved Questions Concerning Computational Thinking.” Communications of the ACM, vol. 60, no. 6, June 2017, pp. 33–39. EBSCOhost, doi:10.1145/2998438. Accessed 20 February 2020.</p>
+    <p><b>3.</b>&nbsp&nbsp&nbsp&nbspVATANSEVER, Özkan, and Şehnaz BALTACI GÖKTALAY. “HOW DOES TEACHING PROGRAMMING THROUGH SCRATCH AFFECT PROBLEM SOLVING SKILLS OF 5th AND 6th GRADE MIDDLE SCHOOL STUDENTS?” International Journal of Eurasia Social Sciences / Uluslararasi Avrasya Sosyal Bilimler Dergisi, vol. 9, no. 33, Sept. 2018, pp. 1778–1801. EBSCOhost, search.ebscohost.com/login.aspx?direct=true&AuthType=cookie,ip,uid&db=a9h&AN=132908675&site=ehost-live. Accessed 20 February 2020.</p>
+    <p><b>4.</b>&nbsp&nbsp&nbsp&nbspScherer, Ronny, et al. “The Cognitive Benefits of Learning Computer Programming: A Meta-Analysis of Transfer Effects.” Journal of Educational Psychology, vol. 111, no. 5, July 2019, pp. 764–792. EBSCOhost, doi:10.1037/edu0000314.</p>
+    <p><b>5.</b>&nbsp&nbsp&nbsp&nbspRaja, Tasneem. “Is Coding the New Literacy?” Mother Jones, 16 June 2014, www.motherjones.com/media/2014/06/computer-science-programming-code-diversity-sexism-education/. Accessed 04 April 2020.</p>
+    <p><b>6.</b>&nbsp&nbsp&nbsp&nbspGottfried Sehringer, Mendix. “Should We Really Try to Teach Everyone to Code?” Wired, 7 Aug. 2015, www.wired.com/insights/2015/02/should-we-really-try-to-teach-everyone-to-code/. Accessed 04 April 2020.</p>
+    <p><b>7.</b>&nbsp&nbsp&nbsp&nbspBradford, Laurence. “Why Every Millennial Should Learn Some Code.” Forbes, 20 June 2016, www.forbes.com/sites/laurencebradford/2016/06/20/why-every-millennial-should-learn-some-code/. Accessed 04 April 2020.</p>
+    <p><b>8.</b>&nbsp&nbsp&nbsp&nbspFarag, Basel. “Please Don't Learn to Code.” TechCrunch, 10 May 2016, techcrunch.com/2016/05/10/please-dont-learn-to-code/. Accessed 04 April 2020.</p>
+    <p><b>9.</b>&nbsp&nbsp&nbsp&nbspBalakrishnan, Akshay. “Fascinating Debates: Should Everyone Learn to Code?” Medium, 17 May 2018, medium.com/@akbgunner4ever/fascinating-debates-should-everyone-learn-to-code-4354fba30bbf. Accessed 07 April 2020.</p>
+    <p><b>10.</b>&nbsp&nbsp&nbsp&nbsp@RexChapman. “This Young Man Is Avi Schiffmann. He's Just 17. But He Built a Site That Tracks Coronavirus Numbers. He Was Offered $8m to Place Ads on the Site. He Turned It down. Not All Heroes Wear Capes.” Twitter, 7 April 2020, 4:12 p.m, twitter.com/RexChapman/status/1247618309480165376.</p>
+    </div>
+
+    
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="" title="Taco Bell's Baja Blast" class="w3-hover-text-green">Popeyes Spicy Chicken Sammies</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
